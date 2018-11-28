@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Melody</title>
+    <link rel="shortcut icon" href="favicon-music.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Play List</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">My
+                        Favorate</a>
+                    <ul class="collapse list-unstyled playlist" id="homeSubmenu">
+                        <li class="song" data-value="audio1.mp3">New Soul</li>
+                        <li class="song" data-value="audio2.mp3">Remember the Name</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Recently</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <i class="fas fa-align-left"></i>
+                        <span id="bar">Sidebar</span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <h2 style="font-family: 'Dancing Script', cursive;color:darkred">Tremble Your Soul!!</h2>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="row" id="main">
+                <img src="cover1.jpg" class="col-4">
+                <div class="col-8" id="lyric">
+                    <p>I'm a new soul, I came to this strange world</p>
+                    <p>Hoping I could learn a bit 'bout how to give and take</p>
+                    <p>But since I came here, felt the joy and the fear</p>
+                    <p>Finding myself making every possible mistake</p>
+                    <p>La-la la la, la-la-la-la la la</p>
+                    <p>La-la-la-la la, la-la la, la-la la</p>
+                    <p>La-la la la, la-la-la-la la la</p>
+                    <p>La-la-la-la la, la-la la, la-la la</p>
+                    <p>See I'm a young soul in this very strange world</p>
+                    <p>Hoping I could learn a bit 'bout what is true and fake</p>
+                    <p>But why all this hate? Try to communicate</p>
+                    <p>Finding trust and love is not always easy to make</p>
+                    <p>La-la la la, la-la-la-la la la</p>
+                    <p>La-la-la-la la, la-la la, la-la la</p>
+                    <p>La-la la la, la-la-la-la la la</p>
+                    <p>La-la-la-la la, la-la la, la-la la, ooh</p>
+                    <p>This is a happy end 'cause you don't understand</p>
+                    <p>Everything you have done, why is everything so wrong?</p>
+                    <p>This is a happy end, come and give me your hand</p>
+                    <p>I'll take you far away</p>
+                    <p>I'm a new soul, I came to this strange world</p>
+                    <p>Hoping I could learn a bit 'bout how to give and take</p>
+                    <p>But since I came here, felt the joy and the fear</p>
+                    <p>Finding myself making every possible mistake</p>
+                    <p>La-la la la, la-la-la-la la la</p>
+                    <p>(New soul)</p>
+                    <p>La-la-la-la la, la-la la, la-la la</p>
+                    <p>(In this very strange world)</p>
+                    <p>La-la la la, la-la-la-la la la</p>
+                    <p>(Every possible mistake)</p>
+                    <p>La-la-la-la la, la-la la, la-la la</p>
+                    <p>(Possible mistake)</p>
+                    <p>La-la la la, la-la-la-la la la</p>
+                    <p>(Every possible mistake)</p>
+                    <p>La-la-la-la la, la-la la, la-la la</p>
+                    <p>La-la la la, la-la-la-la la la</p>
+                    <p>La-la-la-la la, la-la la, la-la la</p>
+                </div>
+                <div id="control">
+                    <audio controls id="myaudio">
+                        <source id="mp3_src" src="audio1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
